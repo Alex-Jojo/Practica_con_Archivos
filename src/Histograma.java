@@ -6,11 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Histograma{
-    public static void main(String[] args) throws FileNotFoundException{
+    public static void main(String[] args){
         String name = " divina_comedia_sp.txt";
         Map<Integer, Integer> words = new HashMap<>();
 
-        try(BufferedReader br = new BufferedReader(new FileReader(name));){
+        try(BufferedReader br = new BufferedReader(new FileReader(name))){
             String line;
             while((line = br.readLine())!=null){
                 String[] wordsss = line.split("\\s+");
